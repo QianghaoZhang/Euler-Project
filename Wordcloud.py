@@ -1,3 +1,4 @@
+#The purpose is to creat a word cloud vision shows the most frequent words in Amazon's reviews
 import pandas as pd
 from wordcloud import WordCloud, STOPWORDS
 import matplotlib.pyplot as plt
