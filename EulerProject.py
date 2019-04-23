@@ -22,7 +22,7 @@ def fin(n):
     return list
  
  
- #  Q3 finding the largest prime factor
+ #  Q3 Finding the largest prime factor
  def prime(n):
     pfactors = []
     if n==1:
