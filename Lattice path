@@ -1,0 +1,19 @@
+# lattice path
+
+import itertools
+num = 0 
+paths = []
+def grids(xlabel):
+    path = []
+    num = 0
+    for i in range (0, xlabel):
+        path.append(0)
+        path.append(1)
+    print('The paths are:\n {}'.format(path))
+    
+    for i in itertools.permutations(path, xlabel*2):
+        if i not in paths:
+            print (i)
+            paths.append(i)
+            num +=1
+    return '\nThe total paths is:\n {}'.format(num)
