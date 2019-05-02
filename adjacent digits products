@@ -1,0 +1,13 @@
+# to generate the product of 4 adjacent digits 
+
+def product(array):
+   
+    num_adjacent_digits = 4
+    largest_so_far = 1
+    current = 1
+    for i in range(len(array)-num_adjacent_digits):
+        for j in range(num_adjacent_digits):
+            current *= int(array[i+j])
+        if current > largest_so_far:
+            largest_so_far = current
+    print(largest_so_far) 
