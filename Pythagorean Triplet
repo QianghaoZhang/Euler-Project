@@ -1,0 +1,25 @@
+'''
+Euclid's formual to generate Pythagorean triple
+a = m^2 -n^2, 
+b = 2mn, 
+c = m^2 + n^2
+a^2 + b^2 = c^2
+Question is to find the product of a triplet whose sum is 1000. i.e a+b+c =1000, find a*b*c
+'''
+
+def triple(num):
+    up_limitation = num
+    m = 2
+    while m < up_limitation:
+        for n in range (1,m):
+            a = m**2 -n**2
+            b = 2*m*n
+            c = m**2 + n**2
+
+            if c > up_limitation:
+                break
+            if a+b+c==12:
+                print(a*b*c)
+        m+=1
+
+print(triple(10))
